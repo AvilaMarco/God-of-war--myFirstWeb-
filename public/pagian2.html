@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>God of war</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="contenedor2">
+      <header>
+        <div>
+          <nav id="navbar">
+            <a href="index.html" class="menu" style="width: 50%;">Pagina Principal</a>
+            <a href="#personajes" class="menu" style="width: 50%;">Personajes</a>
+          </nav>
+          <h3 id="personajes">Personajes</h3>
+          <nav>
+            <table>
+              <tr>
+                <td><a href="#ti">TITANES</a></td>
+                <td><a href="#di">DIOSES</a></td>
+                <td><a href="#oo">OTROS</a></td>
+              </tr>
+              <tr>
+                <td><a href="#t1">Perses</a></td>
+                <td><a href="#d1">Atenea</a></td>
+                <td><a href="#o1">Rey Barbaro</a></td>
+              </tr>
+              <tr>
+                <td><a href="#t2">Gaia</a></td>
+                <td><a href="#d2">Ares</a></td>
+                <td><a href="#o2">Hecatoquiros</a></td>
+              </tr>
+              <tr>
+                <td><a href="#t3">Atlas</a></td>
+                <td><a href="#d3">Zeus</a></td>
+                <td><a href="#o3">Tanatos</a></td>
+              </tr>
+              <tr>
+                <td><a href="#t4">Cronos</a></td>
+                <td><a href="#d4">Poseidon</a></td>
+                <td><a href="#o4">Dedalo</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#d5">Heracles</a></td>
+                <td><a href="#o5">Hermanas Del Destino</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#d6">Hades</a></td>
+                <td></td>
+              </tr>         
+            </table>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="galeria">
+          <h3>Kratos</h3>
+          <div><img class="titan" src="imagenes/galeria/kratos.jpg"></div>
+          <h3 id="ti">Titanes</h3>
+          <div><img id="t1" class="titan" src="imagenes/galeria/titan1.jpg"></div>
+          <div><img id="t2" class="titan" src="imagenes/galeria/titan2.jpg"></div>
+          <div><img id="t3" class="titan" src="imagenes/galeria/titan3.jpg"></div>
+          <div><img id="t4" class="titan" src="imagenes/galeria/titan4.jpg"></div>
+          <h3 id="di">Dioses</h3>
+          <div><img id="d1" class="titan" src="imagenes/galeria/dios1.jpg"></div>
+          <div><img id="d2" class="titan" src="imagenes/galeria/dios2.jpg"></div>
+          <div><img id="d3" class="titan" src="imagenes/galeria/dios3.jpg"></div>
+          <div><img id="d4" class="titan" src="imagenes/galeria/dios4.jpg"></div>
+          <div><img id="d5" class="titan" src="imagenes/galeria/dios5.jpg"></div>
+          <div><img id="d6" class="titan" src="imagenes/galeria/dios6.jpg"></div>
+          <h3 id="oo">Otros</h3>
+          <div><img id="o1" class="titan" src="imagenes/galeria/otros1.jpg"></div>
+          <div><img id="o2" class="titan" src="imagenes/galeria/otros2.jpg"></div>
+          <div><img id="o3"class="titan" src="imagenes/galeria/otros3.jpg"></div>
+          <div><img id="o4" class="titan" src="imagenes/galeria/otros5.jpg"></div>
+          <div><img id="o5" class="titan" src="imagenes/galeria/otros4.jpg"></div>
+        </div>
+      </main>
+      <footer><p>Copyright © 2018 - Desarrollado por Marco Avila</p></footer>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
